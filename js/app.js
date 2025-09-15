@@ -195,6 +195,8 @@
 // alert(`Salam ${name}`)
 // console.log(`Salam ${name}`);
 
+// ------------------------------------------------------------------------------------------------------------------------------
+
 // ## Task - 14
 
 // İstifadəçidən iki ayrı prompt əmri ilə iki ədəd daxil etməsini istəyin.
@@ -213,3 +215,121 @@
 // console.log(`${num_1} - ${num_2} = ${cixma}`);
 // console.log(`${num_1} * ${num_2} = ${vurma}`);
 // console.log(`${num_1} / ${num_2} = ${bolme}`);
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task - 15
+
+// 12345 və 98765 ədədlərinin hasilindən alınan nəticənin 6 - cı rəqəmini tapan proqram yazın.
+
+
+// let num = 12345 * 98765
+// console.log(num);
+// let total = String(num)[6]
+// let total = num.toString()[6]
+// console.log(total);
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task - 16
+
+// Əməliyyatların nəticəsini müəyyənləşdirin.
+
+// "" + 1 + 0 =
+// "" - 1 + 0 =
+// "true" - false =
+// 6 / "3" =
+// 4 + 5 + "px" =
+// "$" + 4 + 5 =
+// "4" - 2 =
+// NaN + "px" =
+// 7 / 0 =
+// "-9" + 5 =
+// "-9" - 5 =
+// null + 1 =
+// undefined + 1 =
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task - 17
+
+// Rəqəmlərin cəmini göstərən proqram yazın.
+// İstifadəçidən dörd rəqəmli ədəd daxil etməsini xahiş edən və
+// sonra daxil edilmiş ədədlərin rəqəmlərinin cəmini konsola çıxaran proqram yazın.
+
+// let user = prompt("dörd rəqəmli ədəd daxil edin zehmet olmasa")
+// let toplama = +user[0] + +user[1] + +user[2] + +user[3]
+// console.log(toplama);
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task - 18
+
+// İstifadəçinin soyadını və adını almaq üçün proqram tərtib edin.
+// Proqram bir mesajla istifadəçinin soyadını və adını daxil etməsini istəyir və
+// konsola «Salam, <ad>!» mesajını çıxarır.
+
+// let name =  prompt(`Salam adinizi yazin!`)
+// console.log(`Salam ${name}`);
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-19
+
+// Qiyməti mətn halına salan proqram tərtib edin.
+// İstifadəçidən «530.90» formatında qiymət daxil etməyi xahiş edən və
+// qiyməti «530 manat 90 qəpik» formatında konsola çıxaran proqram tərtib edin.
+
+// let user = prompt(`"Salam manat ve qepik olaraq qeyd edin " Numunu : 530.90" `)
+// let pul = user.split(".")
+// console.log(`${pul[0]} manat ${pul[1]} qəpik»`);
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-20
+
+// Vergi nəzərə alınmadan əmək haqqı məbləğini hesablayan proqram tərtib edin.
+// Proqram istifadəçidən əmək haqqı məbləğin soruşur və
+// 13% vergi istisna olmaqla məbləği konsola çıxarır.
+
+// let emek = +prompt(`Salam gozel insan ne qeder emek haqqi alirsan ? duzgun de :)`)
+// let emekhaqqi = emek * 13 / 100
+// console.log(`Salam siz ${emekhaqqi} manat vergi verirsiniz DOVLETE !`);
+ 
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-21
+
+// İstifadəçidən soyad, ad və ata adını istəyən,
+// soyadı və baş hərfləri konsola çıxaran proqram tərtib edin.
+// Məsələn, «İvanov Pyotr Sergeevich» — «İvanov P.S.».
+
+// let surname = prompt("Soyadini yazin");
+// let name = prompt("Adinizi yazin");
+// let fatherName = prompt("Ata adini yazin");
+// console.log(`${surname} ${name[0]}.${fatherName[0]}`);
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-22
+
+// Depozitdən mənfəətin hesablanması üçün proqram yazın.
+// Proqram istifadəçidən əmanətin məbləğini, müddətini və
+// faiz dərəcəsini daxil etməsini istəyir və gözlənilən mənfəəti hesablayır.
+
+// let emanetinMeblegi = prompt("Emanetin meblegini daxil edin:")
+// let vaxt = prompt("Emanetin muddetini aylarla daxil edin:")
+// let faiz = prompt("Faiz derecesini daxil edin:")
+// let menfeet = (emanetinMeblegi * faiz * vaxt) / (12 * 100);
+// console.log("Gözlənilən mənfəət: " + menfeet.toFixed(2));
