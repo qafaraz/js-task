@@ -303,7 +303,7 @@
 // let emek = +prompt(`Salam gozel insan ne qeder emek haqqi alirsan ? duzgun de :)`)
 // let emekhaqqi = emek * 13 / 100
 // console.log(`Salam siz ${emekhaqqi} manat vergi verirsiniz DOVLETE !`);
- 
+
 
 // ------------------------------------------------------------------------------------------------------------------------------
 
@@ -333,3 +333,378 @@
 // let faiz = prompt("Faiz derecesini daxil edin:")
 // let menfeet = (emanetinMeblegi * faiz * vaxt) / (12 * 100);
 // console.log("Gözlənilən mənfəət: " + menfeet.toFixed(2));
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-23
+
+// Müxtəlif müqayisə operatorları ilə 5 ifadə yazın.
+// value dəyişəni üçün müxtəlif müqayisə operatorları ilə 5 ifadə yazın,
+// hansıki əməliyyat nəticəsi value = 10 üçün true və value = 20 üçün false olacaq.
+
+
+// let value = 10
+
+// console.log(value === 10);
+// console.log(value !== 10);
+// console.log(value && 10);
+// console.log(value && 20);
+// console.log(value || 25);
+// console.log(!(value > 15));
+// console.log(value < 5);
+// console.log(15 > value);
+// console.log(20 !== value);
+// console.log(!(value > 15) && !(value > 15) );
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-24
+
+// İstifadəçidən yaşını soruşun.
+// Əgər yaşı 18-dən azdırsa, o zaman brauzerdə «Access denied» bildirişi çıxarın.
+// Əks halda «Access granted» bildirişini çıxarın.
+
+// let age = prompt("yasinizi yazin");
+
+// if (age === "" || age === null) {
+//     alert("bosdu");
+// } else if (+age < 18) {
+//     alert("Access denied");
+// } else if (+age >= 18) {
+//     alert("Access granted");
+// }
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-25
+
+// Üç ədədin ortancılını tapmaq üçün proqram yazın.
+// İstifadəçidən bir bildirişlə üç ikirəqəmli ədəd daxil etməsini xahiş edin.
+// Konsola orta ədədi, yəni nə ən böyüyü, nə də ən kiçiyini çıxarmayın.
+// İstifadəçi bir neçə eyni nömrə daxil edibsə, xəta bildirişi çıxarın.
+
+// Məsələn:
+
+// - "45 46 47"
+// - "47 46 45"
+// - "46 45 47"
+// - "46 47 45"
+
+// method v1
+// let num = prompt(" üç ikirəqəmli ədəd daxil edin!!")
+// let str = num.trim().split(" ").sort()
+// let num1 = str[0]
+// let num2 = str[1]
+// let num3 = str[2]
+// if(num1 === num2 || num1 === num3 || num2 === num3){
+// console.log("404 reqemler eyni olmali deyil zehmet olmasa ferqli yaz")
+// }
+// console.log(str);
+
+// method v2
+// let num = prompt(" üç ikirəqəmli ədəd daxil edin!!");
+// let str = num.trim().split(" ").sort();
+// let num1 = +str[0];
+// let num2 = +str[1];
+// let num3 = +str[2];
+// (num1 === num2 || num1 === num3 || num2 === num3)
+//     ? console.log("404 reqemler eyni olmali deyil")
+//     : console.log(str);
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// ## Task-26
+
+// İstifadəçidən bir il daxil etməsini soruşun və ilin uzun il olub olmadığını yoxlayın.
+// Uzun il 4-ə qalıqsız bölünən ildir.
+// Daxil edilmiş il uzun ildirsə, konsola mesaj cıxarın.
+// «İl uzun il deyil» və ya «İl uzun ildir» mesajını çıxarın.
+
+
+// let bildiris = prompt("Uzun il qeyd edin")
+// if (bildiris % 4 === 0) {
+//     console.log("Daxil etdiyiniz il uzun ildir");
+// }
+// else {
+//     console.log("il uzun il deyiL");
+// }
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-27
+
+// if...else operatoru ilə yazılmış kodu switch operatoruna dəyişdirməklə kodu yenidən yazın.
+
+// ```javascript
+// let id = prompt("enter product id:");
+// if (id === "1") {
+//   alert("Available 10 pcs.");
+// } else if (id === "2") {
+//   alert("Available 256 pcs.");
+// } else if (id === "3") {
+//   alert("Available 53 pcs.");
+// } else if (id === "4") {
+//   alert("There are 3 available.");
+// } else {
+//   alert("Out of stock");
+// }
+// ```
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-28
+
+// İstifadəçidən onun cinsini (M və ya F hərfləri şəklində) sorğulayan və
+// gender dəyişəninə male yaxud female sözlərindən birini yazdıran proqramı yazın
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-29
+
+// Ayın adını mətnlə konsola yazdıran bir program yazın.
+// İstifadəçidən ayın nömrəsini soruşun və adını konsola çıxarın.
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-30
+
+// İstifadəçi tərəfindən daxil edilmiş tarixin təsvirini çıxarın.
+// İstifadəçidən tarixi «2009.12.19» formatında daxil etməyi xahiş edin.
+// Tarixin təsvirini «19 Dekabr 2009-cu il» formatında çıxarın.
+// Daxil edilmiş dəyərə validator əlavə edin.
+// İstifadəçi səhv formatda dəyər daxil edərsə, «Yanlış dəyər daxil edilib» bildirişi göstərin.
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task-31
+// ```
+// let p = 8;
+// let q = p-- - --p + p++ + ++p;
+// console.log(p, q);
+// 8 16
+// ```
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task-32
+// ```
+// let a = 6, b = 4, c = 2;
+
+// let x = ++a - b-- + c++ - --b + a++;
+// let y = a-- + --c - ++b + x++ - --a;
+
+// console.log(a, b, c, x, y); 
+// 6 3 2 11 11
+// ```
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-33
+// ```
+// let a = 7, b = 3, c = 5;
+
+// let x = a-- - ++b + c++ - --a + b++ - --c + a++ - b-- + c++;
+// let y = --x + a++ - --b + c-- - x++ + ++a - b++ + --c - x--;
+// let z = a-- + ++b - --c + x++ - --y + b-- - ++x + c++ - --a + y++;
+
+// console.log(a, b, c, x, y, z);
+// 6 4 4 8 11 10
+// ```
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-34
+
+// Ədədin Müsbət, Mənfi və ya Sıfır Olduğunu Yoxla
+// Verilmiş ədədin müsbət, mənfi və ya sıfır olduğunu müəyyən edin.
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task-35
+
+// **Üç Ədəddən Ən Böyüyünü Tap** <br>
+// let a = 5, b = 8, c = 3;
+
+// method v1
+// let num = [5,8,3]
+// let num1 = Math.max(...num)
+// let num2 = Math.min(...num)
+
+// console.log(num1);
+// console.log(num2);
+
+// method v2
+// let num = [5,3,12].sort((a, b) => b - a);
+// console.log(num[0]);
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task-36
+
+// **Cüt və ya Tək Ədəd** <br>
+// Verilmiş ədədin cüt və ya tək olduğunu ternary operatoru ilə müəyyən edin.
+
+// let num = 15
+// let tekcut = num % 2 === 0
+// ? console.log("reqem cutdur")
+// : console.log("reqem tekdir")
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task-37
+
+// **Kvadratın Sahəsi və Perimetri** <br>
+// Bir tərəfi `a` olan kvadrat üçün sahəni və perimetri tapın.
+
+// method 1 
+// let num1 = 2
+// let num2 = 6
+// let perimetri = num1 * num2
+// let sahesi = (num1 + num2) * 2
+// console.log(perimetri)
+// console.log(sahesi);
+
+
+// method 2
+// function duzbucaqlinin_sahesini_hesabla(kisa,uzun){
+//     let mesafa = kisa * uzun
+//     let sahesi = ( kisa + uzun) * 2
+//     return `Mesafesini:${mesafa} Sahesi: ${sahesi}`;
+// }
+// let netice = duzbucaqlinin_sahesini_hesabla(10,5)
+// console.log(netice)
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task-38
+
+// **Qiymətə Görə Nəticə (switch-case)** <br>
+// Qiymət verilir (0-100). Aşağıdakı qaydaya əsasən nəticəni `switch-case` ilə yazın:
+
+// - 90-100: Əla
+// - 75-89: Yaxşı
+// - 60-74: Orta
+// - 0-59: Zəif
+
+// > Qeyd: `switch(true)` üsulu ilə istifadə edin.
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// ## Task-39
+
+// **0-50 Arasında Təsadüfi Ədəd** <br>
+// 0 ilə 100 arasında `Math.random()` ilə təsadüfi ədəd yaradın və onun 0-50 arasında olub olmadığını yoxlayın.
+
+// let random = Math.floor(Math.random() * 100)
+// if (random <= 50 && random >= 0) {
+//     console.log(`${random} reqeminiz 0-50 arasindadir`);
+// }
+// else {
+//     console.log(`${random} reqeminiz 50-100 arasindadir`);
+
+// }
+// console.log((random <= 50 && random >= 0)
+//     ? `${random} reqeminiz 0-50 arasindadir`
+//     : `${random} reqeminiz 50-100 arasindadir`
+// );
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+// ## Task-40
+// **Sadə Kalkulyator (switch-case)** <br>
+// İki ədəd və operator (`+`, `-`, `*`, `/`) verilib. `switch-case` ilə əməliyyatı icra edin.
+// let a = 5, b = 3, op = "*";
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
