@@ -467,7 +467,23 @@
 // ```
 
 
-
+// let id = +prompt("enter product id:")
+// switch (id) {
+//     case 1:
+//         alert("Available 10 pcs.");
+//         break;
+//     case 2:
+//         alert("Available 256 pcs.");
+//         break;
+//     case 3:
+//         alert("Available 53 pcs.");
+//         break;
+//     case 4:
+//         alert("There are 3 available.");
+//         break;
+//     default :
+//         alert("Out of stock");
+// }
 
 
 
@@ -478,6 +494,15 @@
 
 // İstifadəçidən onun cinsini (M və ya F hərfləri şəklində) sorğulayan və
 // gender dəyişəninə male yaxud female sözlərindən birini yazdıran proqramı yazın
+
+// let gender = prompt("M and F");
+
+// gender === "M"
+//     ? console.log("Men")
+//     : gender === "F"
+//         ? console.log("Female")
+//         : console.log("Invalid input");
+
 
 
 
@@ -491,8 +516,47 @@
 // Ayın adını mətnlə konsola yazdıran bir program yazın.
 // İstifadəçidən ayın nömrəsini soruşun və adını konsola çıxarın.
 
-
-
+// let month = +prompt("zehmet olmasa ayin nomresini yazin")
+// switch (month) {
+//     case 1:
+//         console.log("yanvar");
+//         break;
+//     case 2:
+//         console.log("fevral");
+//         break;
+//     case 3:
+//         console.log("mart");
+//         break;
+//     case 4:
+//         console.log("aprel");
+//         break;
+//     case 5:
+//         console.log("may");
+//         break;
+//     case 6:
+//         console.log("iyun");
+//         break;
+//     case 7:
+//         console.log("iyul");
+//         break;
+//     case 8:
+//         console.log("avqust");
+//         break;
+//     case 9:
+//         console.log("sentyabr");
+//         break;
+//     case 10:
+//         console.log("oktyabr");
+//         break;
+//     case 11:
+//         console.log("noyabr");
+//         break;
+//     case 12:
+//         console.log("dekabr");
+//         break
+//     default:
+//         console.log("12 dene ayimiz var!!");
+// }
 
 
 
@@ -506,7 +570,82 @@
 // Daxil edilmiş dəyərə validator əlavə edin.
 // İstifadəçi səhv formatda dəyər daxil edərsə, «Yanlış dəyər daxil edilib» bildirişi göstərin.
 
+// let input = prompt("YYYY.MM.DD");
 
+// let parts = input.split(".");
+// if (parts.length === 3) {
+//     let year = +parts[0];
+//     let month = +parts[1];
+//     let day = +parts[2];
+//     if (year > 0 && month >= 1 && month <= 12 && day >= 1 && day <= 31) {
+//         let monthName;
+//         switch (month) {
+//             case 1:
+//                 monthName = "Yanvar";
+//                 break;
+//             case 2:
+//                 monthName = "Fevral";
+//                 break;
+//             case 3:
+//                 monthName = "Mart";
+//                 break;
+//             case 4:
+//                 monthName = "Aprel";
+//                 break;
+//             case 5:
+//                 monthName = "May";
+//                 break;
+//             case 6:
+//                 monthName = "İyun";
+//                 break;
+//             case 7:
+//                 monthName = "İyul";
+//                 break;
+//             case 8:
+//                 monthName = "Avqust";
+//                 break;
+//             case 9:
+//                 monthName = "Sentyabr";
+//                 break;
+//             case 10:
+//                 monthName = "Oktyabr";
+//                 break;
+//             case 11:
+//                 monthName = "Noyabr";
+//                 break;
+//             case 12:
+//                 monthName = "Dekabr";
+//                 break;
+//             default: monthName = "guya bilmirsen ayimiz 13 dene olur";
+//         }
+
+//         if (monthName) {
+//             console.log(`${day} ${monthName} ${year}-cu il`);
+//         } else {
+//             console.log("duz yaz guya agillisan");
+//         }
+//     } else {
+//         console.log("duz yaz guya agillisan");
+//     }
+// } else {
+//     console.log("duz yaz guya agillisan");
+// }
+
+
+// function neUcunyasamisam(il, ay, gun) {
+//     let oldugumuzil = new Date();
+//     let dogumTarihi = new Date(il, ay - 1, gun);
+//     let days = 31 - gun
+//     let yasagidimiz_il_ay_gun = oldugumuzil - dogumTarihi - days;
+//     let kecenvaxt = new Date(yasagidimiz_il_ay_gun);
+//     let yasadigin_il = kecenvaxt.getFullYear() - 1970; //Unix Epoch !
+//     let yasadigin_ay = kecenvaxt.getMonth();
+//     console.log(`Dogum iliniz: ${dogumTarihi.toLocaleDateString()}`);
+//     console.log(
+//       `Toplam kecen vaxt: ${yasadigin_il} il, ${yasadigin_ay} ay, ${days} gun`
+//     );
+//   }
+//   neUcunyasamisam(2005, 4, 16);
 
 
 // ------------------------------------------------------------------------------------------------------------------------------
@@ -534,7 +673,7 @@
 // let x = ++a - b-- + c++ - --b + a++;
 // let y = a-- + --c - ++b + x++ - --a;
 
-// console.log(a, b, c, x, y); 
+// console.log(a, b, c, x, y);
 // 6 3 2 11 11
 // ```
 
@@ -573,9 +712,11 @@
 // Ədədin Müsbət, Mənfi və ya Sıfır Olduğunu Yoxla
 // Verilmiş ədədin müsbət, mənfi və ya sıfır olduğunu müəyyən edin.
 
+// let num = +prompt("eded daxil edin!!!");
 
+// let result = (num > 0) ? "eded musbetdir" : (num < 0) ? "eded menfidir" : "eded sifirdir";
 
-
+// console.log(result);
 
 
 
@@ -630,7 +771,7 @@
 // **Kvadratın Sahəsi və Perimetri** <br>
 // Bir tərəfi `a` olan kvadrat üçün sahəni və perimetri tapın.
 
-// method 1 
+// method 1
 // let num1 = 2
 // let num2 = 6
 // let perimetri = num1 * num2
@@ -666,10 +807,25 @@
 // - 0-59: Zəif
 
 // > Qeyd: `switch(true)` üsulu ilə istifadə edin.
+// let num = +prompt("balinizi daxil edin (0-100):");
 
-
-
-
+// let num = +prompt("Qiyməti daxil edin (0-100):");
+// switch (true) {
+//     case (num >= 90 && num <= 100):
+//         console.log("Əla");
+//         break;
+//     case (num >= 75 && num <= 89):
+//         console.log("Yaxşı");
+//         break;
+//     case (num >= 60 && num <= 74):
+//         console.log("Orta");
+//         break;
+//     case (num >= 0 && num <= 59):
+//         console.log("Zəif");
+//         break;
+//     default:
+//         console.log("Yanlış qiymət daxil etdiniz");
+// }
 
 
 
@@ -703,6 +859,26 @@
 // İki ədəd və operator (`+`, `-`, `*`, `/`) verilib. `switch-case` ilə əməliyyatı icra edin.
 // let a = 5, b = 3, op = "*";
 
+// let a = 5;
+// let b = 12;
+// let op = "*";
+
+// switch (op) {
+//     case "+":
+//         console.log(`${a} + ${b} = ${a + b}`);
+//         break;
+//     case "-":
+//         console.log(`${a} - ${b} = ${a - b}`);
+//         break;
+//     case "*":
+//         console.log(`${a} * ${b} = ${a * b}`);
+//         break;
+//     case "/":
+//         console.log(`${a} / ${b} = ${a / b}`);
+//         break;
+//     default:
+//         console.log("alinmadi");
+// }
 
 
 
