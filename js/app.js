@@ -407,7 +407,7 @@
 // if(num1 === num2 || num1 === num3 || num2 === num3){
 // console.log("404 reqemler eyni olmali deyil zehmet olmasa ferqli yaz")
 // }
-// console.log(str);
+// console.log(num2);
 
 // method v2
 // let num = prompt(" üç ikirəqəmli ədəd daxil edin!!");
@@ -417,7 +417,7 @@
 // let num3 = +str[2];
 // (num1 === num2 || num1 === num3 || num2 === num3)
 //     ? console.log("404 reqemler eyni olmali deyil")
-//     : console.log(str);
+//     : console.log(num2);
 
 
 
