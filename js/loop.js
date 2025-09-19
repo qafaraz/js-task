@@ -124,14 +124,14 @@
 // İstifadəçidən n ədədini soruşan və n-dən 0-a kimi bütün sadə ədədləri azalan ardıcıllıqla çıxaran proqram yazın.
 // «23» ədədi daxil edildikdə, konsola «23», «19», «17», «13», «11», «7», «5», «3», «2», «1» ardıcıllığı çıxarılmalıdır.
 // ```
-let num1 = 0
-let num2 = 1
-for( let num = 0; num < 100;){
-    console.log(num)
-    num = num1 + num2
-    num1 = num2 
-    num2 = num
-}
+// let num1 = 0
+// let num2 = 1
+// for( let num = 0; num < 100;){
+//     console.log(num)
+//     num = num1 + num2
+//     num1 = num2 
+//     num2 = num
+// }
 
 // riyaziyyat bilmirem!!!
 
