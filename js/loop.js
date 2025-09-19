@@ -124,16 +124,38 @@
 // İstifadəçidən n ədədini soruşan və n-dən 0-a kimi bütün sadə ədədləri azalan ardıcıllıqla çıxaran proqram yazın.
 // «23» ədədi daxil edildikdə, konsola «23», «19», «17», «13», «11», «7», «5», «3», «2», «1» ardıcıllığı çıxarılmalıdır.
 // ```
-// let num1 = 0
-// let num2 = 1
-// for( let num = 0; num < 100;){
-//     console.log(num)
-//     num = num1 + num2
-//     num1 = num2 
-//     num2 = num
+
+
+// let userNum = 56;
+
+// for (let num = 2; num <= userNum; num++) {
+//     let cnt = 0;
+//     for (let i = 1; i <= num; i++) {
+//         if (num % i === 0) {
+//             cnt++;
+//         }
+//     }
+//     if (cnt === 2) {
+//         console.log(num);
+//     }
 // }
 
-// riyaziyyat bilmirem!!!
+
+
+// for (let userNum = 56; userNum > 1; userNum--) {
+//     let num = userNum
+//     let cnt = 0
+//     for (let i = num; i > 0; i--) {
+//         if (num % i === 0) {
+//             cnt++
+//         }
+//     }
+//     if (cnt === 2) {
+//         console.log(userNum)
+//     }
+// }
+
+
 
 
 // ## Task-07-dən Task-10-a qədər for ilə yazılmalıdır!
@@ -164,7 +186,7 @@
 
 
 // let name = "rafaq";
-// let reversed = ""; 
+// let reversed = "";
 // for (let i = name.length - 1; i >= 0; i--) {
 //     reversed += name[i];
 // }
@@ -200,7 +222,7 @@
 // let user = "q2far";
 
 // for (let num = 0; num < user.length; num++) {
-//     if (/\d/.test(user[num])) { 
+//     if (/\d/.test(user[num])) {
 //         console.log("reqem var");
 //         break
 //     }
