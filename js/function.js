@@ -191,16 +191,19 @@
 // }
 // console.log(space.length)
 
+// normal function method
 // function user(text) {
 //     let space = [...text].filter(a => a === " ")
 //     console.log(space.length)
 // }
 // user("Q a f a r")
 
-
-
-
-
+// arrow function method
+// let user = text => {
+//     let space = [...text].filter(a => a === " ")
+//     console.log(space.length)
+// }
+// user("Q a f a r")
 
 // ### Task-18
 // İstifadəçidən iki tam ədəd daxil etməsini xahiş edin.
@@ -215,8 +218,19 @@
 //     console.log(cal);
 // }
 
-
+// normal function method
 // function user(num1,num2){
+//     let zero = 0
+//     for(let a = num1; a <= num2;a++){
+//         zero = a
+//         let cal = zero * a
+//         console.log(cal);
+//     }
+// }
+// user(3,6)
+
+// arrow function method
+// let user = (num1,num2) =>{
 //     let zero = 0
 //     for(let a = num1; a <= num2;a++){
 //         zero = a
