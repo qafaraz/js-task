@@ -239,3 +239,39 @@
 //     }
 // }
 // user(3,6)
+
+
+
+
+//  1-ci method
+// let a = 10
+// let b = 6
+
+// a = 6
+// b = 10
+
+// console.log(a,b);
+
+
+//  2-ci method
+// let a = 10;
+// let b = 6;
+
+// a = a ^ b;
+// b = a ^ b;
+// a = a ^ b;
+
+// console.log(a,b);
+
+
+//  3-cu method
+// let a = 10;
+// let b = 6;
+
+// a = a + b; 
+// b = a - b; 
+// a = a - b; 
+
+// console.log(a, b); 
+
+
