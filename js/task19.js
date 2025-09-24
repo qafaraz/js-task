@@ -215,6 +215,14 @@
 // number(234801)
 
 
+// function isLucky(num) {
+//     let str = String(num);
+//     return +str[0] + +str[1] + +str[2] === +str[3] + +str[4] + +str[5]
+// }
+// console.log(isLucky(234801));
+// console.log(isLucky(123456));
+// console.log(isLucky(111222));
+
 
 // -----------------------------------------------------------------------------------------------
 
@@ -426,6 +434,17 @@
 // Məsələn, `daysBetweenDates("2025-04-01", "2025-04-10")` çağırıldıqda `9` qaytarmalıdır.
 // ```
 
+// const date_1 = new Date("2025-04-01");
+// const date_2 = new Date("2025-04-10");
+// console.log((date_2 - date_1) / (1000 * 60 * 60 * 24));
+
+// function daysBetweenDates(date1, date2) {
+//     const d1 = new Date(date1);
+//     const d2 = new Date(date2);
+//     console.log((d2 - d1) / (1000 * 60 * 60 * 24));
+
+// }
+// daysBetweenDates("2025-04-01", "2025-04-10");
 
 // -----------------------------------------------------------------------------------------------
 
