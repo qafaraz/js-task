@@ -69,19 +69,19 @@
 // Rüb - 3 aylıq bir müddətdir.
 // ```
 
-// let salary = [
-//     [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
-//     [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
-//     [150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 180],
-//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-//     [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
-//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-//     [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
-//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-//     [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
-//     [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
-// ];
-// console.log(salary[0]);
+let salary = [
+    [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+    [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
+    [150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 180],
+    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+    [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
+    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+    [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
+    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+    [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
+    [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
+];
+console.log(salary[0]);
 // 1 ci
 // function totalSalary(mais) {
 //     let total = 0;
@@ -115,39 +115,39 @@
 // }
 // monthGroup(1)
 
-// function rub(rubNumber) {
-//     let total = 0;
-//     let ayStart = 0;
-//     let ayEnd = 0
-//     if (rubNumber === 1) { 
-//         ayStart = 0;
-//         ayEnd = 3;
-//     } else if (rubNumber === 2) { 
-//         ayStart = 3;
-//         ayEnd = 6;
-//     } else if (rubNumber === 3) { 
-//         ayStart = 6;
-//         ayEnd = 9;
-//     } else if (rubNumber === 4) { 
-//         ayStart = 9;
-//         ayEnd = 12;
-//     } else {
-//         console.log("1 il erzinde rub 4 dene olur !!");
-//         return
-//     }
-//     for (let a = 0; a < salary.length; a++) {
-//         for (let b = ayStart; b < ayEnd; b++) {
-//             total += salary[a][b];
-//         }
-//     }
-//     console.log(`${rubNumber} rub maasi ${total} manat`);
-// }
+function rub(rubNumber) {
+    let total = 0;
+    let ayStart = 0;
+    let ayEnd = 0
+    if (rubNumber === 1) { 
+        ayStart = 0;
+        ayEnd = 2;
+    } else if (rubNumber === 2) { 
+        ayStart = 3;
+        ayEnd = 6;
+    } else if (rubNumber === 3) { 
+        ayStart = 6;
+        ayEnd = 9;
+    } else if (rubNumber === 4) { 
+        ayStart = 9;
+        ayEnd = 12;
+    } else {
+        console.log("1 il erzinde rub 4 dene olur !!");
+        return
+    }
+    for (let a = 0; a < salary.length; a++) {
+        for (let b = ayStart; b < ayEnd; b++) {
+            total += salary[a][b];
+        }
+    }
+    console.log(`${rubNumber} rub maasi ${total} manat`);
+}
 
-// rub(1); 
-// rub(2); 
-// rub(3); 
-// rub(4); 
-// rub(5); 
+rub(1); 
+rub(2); 
+rub(3); 
+rub(4); 
+rub(5); 
 
 
 
