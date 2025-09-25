@@ -121,7 +121,7 @@ function rub(rubNumber) {
     let ayEnd = 0
     if (rubNumber === 1) { 
         ayStart = 0;
-        ayEnd = 2;
+        ayEnd = 3;
     } else if (rubNumber === 2) { 
         ayStart = 3;
         ayEnd = 6;
