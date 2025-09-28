@@ -69,19 +69,19 @@
 // Rüb - 3 aylıq bir müddətdir.
 // ```
 
-let salary = [
-    [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
-    [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
-    [150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 180],
-    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-    [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
-    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-    [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
-    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-    [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
-    [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
-];
-console.log(salary[0]);
+// let salary = [
+//     [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+//     [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
+//     [150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 180],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
+//     [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
+// ];
+// console.log(salary[0]);
 // 1 ci
 // function totalSalary(mais) {
 //     let total = 0;
@@ -115,39 +115,39 @@ console.log(salary[0]);
 // }
 // monthGroup(1)
 
-function rub(rubNumber) {
-    let total = 0;
-    let ayStart = 0;
-    let ayEnd = 0
-    if (rubNumber === 1) { 
-        ayStart = 0;
-        ayEnd = 3;
-    } else if (rubNumber === 2) { 
-        ayStart = 3;
-        ayEnd = 6;
-    } else if (rubNumber === 3) { 
-        ayStart = 6;
-        ayEnd = 9;
-    } else if (rubNumber === 4) { 
-        ayStart = 9;
-        ayEnd = 12;
-    } else {
-        console.log("1 il erzinde rub 4 dene olur !!");
-        return
-    }
-    for (let a = 0; a < salary.length; a++) {
-        for (let b = ayStart; b < ayEnd; b++) {
-            total += salary[a][b];
-        }
-    }
-    console.log(`${rubNumber} rub maasi ${total} manat`);
-}
+// function rub(rubNumber) {
+//     let total = 0;
+//     let ayStart = 0;
+//     let ayEnd = 0
+//     if (rubNumber === 1) { 
+//         ayStart = 0;
+//         ayEnd = 3;
+//     } else if (rubNumber === 2) { 
+//         ayStart = 3;
+//         ayEnd = 6;
+//     } else if (rubNumber === 3) { 
+//         ayStart = 6;
+//         ayEnd = 9;
+//     } else if (rubNumber === 4) { 
+//         ayStart = 9;
+//         ayEnd = 12;
+//     } else {
+//         console.log("1 il erzinde rub 4 dene olur !!");
+//         return
+//     }
+//     for (let a = 0; a < salary.length; a++) {
+//         for (let b = ayStart; b < ayEnd; b++) {
+//             total += salary[a][b];
+//         }
+//     }
+//     console.log(`${rubNumber} rub maasi ${total} manat`);
+// }
 
-rub(1); 
-rub(2); 
-rub(3); 
-rub(4); 
-rub(5); 
+// rub(1); 
+// rub(2); 
+// rub(3); 
+// rub(4); 
+// rub(5); 
 
 
 
@@ -208,6 +208,9 @@ rub(5);
 // 10 ədəddən ibarət massiv yaradın.
 // İlk 2 ədədi dəyişənlərə yazın və qalanlardan yeni massiv yaradın.
 // ```
+// let [user1,user2,...other] = ["Qafar","Abdul","Amir","Rehim","Gunel","Davud","Cavid","Cavidan","Aysu","Aytac"]
+// console.log(user1,user2);
+// console.log(other);
 
 
 // ## Task-08
@@ -219,6 +222,9 @@ rub(5);
 // spread-operatorundan istifadə edərək massiv arqumentlərini funksiyaya ötürün.
 // ```
 
+// let number = [1,2,3,4,5,6,7,8,9,15]
+// console.log(Math.max(...number));
+
 // ## Task-09
 
 // ```
@@ -227,6 +233,14 @@ rub(5);
 // Orijinal massivin surətini çıxarın və yeni massivin bütün elementlərini ikiqat artırın.
 // Orijinal massivin dəyişmədiyini yoxlayın.
 // ```
+
+// map() methods ile
+// let number = [2,4,6,8,10]
+// let total = number.map(num => num * 2)
+// console.log(number);
+// console.log(total);
+
+
 
 // ## Task-10
 
@@ -325,6 +339,10 @@ rub(5);
 // let array = [1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22];
 // ```
 
+// let array = [1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22];
+// console.log(array.sort((a,b)=> a-b));
+
+
 // ## Task-13
 
 // ```
@@ -417,6 +435,25 @@ rub(5);
 // 4 - Jimmy
 // ```
 
+// const names = ["Qafar", "Abdul", "Amir", "Fuad", "Ikram"];
+// function printWithDashes(name) {
+//     console.log('---');
+//     console.log(name);
+//     console.log('---');
+// }
+// function printWithHearts(name) {
+//     console.log(`<3<3<3<3 ${name} <3<3<3<3`);
+// }
+// function printWithIndex(name, index) {
+//     console.log(`${index} - ${name}`);
+// }
+// names.forEach(printWithDashes);
+// names.forEach(printWithHearts);
+// names.forEach(printWithIndex);
+
+
+
+
 // ## Task-16
 
 // ```
@@ -425,6 +462,19 @@ rub(5);
 // INPUT: console.log(kebabToUpper('first-user'));
 // OUTPUT: FIRST_USER
 // ```
+
+
+// let arr = ["first-user", "second-user", "third-user"];
+// let result = arr.map(item => item.replace("-", "_").toUpperCase());
+// console.log(result);
+
+
+// function kebab(text){
+//     return text.replace("-", "_").toUpperCase();
+// }
+// console.log(kebab("first-user"));
+// console.log(kebab("my-long-variable")); 
+
 
 // # MAP,FILTER,FIND
 
@@ -440,6 +490,20 @@ rub(5);
 //   let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
 // ```
 
+// let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+// let menfiededler = numbers.map(num => {
+//     if (num < 0) return Math.abs(num);
+//     return num;
+// });
+// let musbetededler = numbers.filter(num => num > 0).map(num => num * 2);
+
+// console.log(menfiededler);
+// console.log(musbetededler);
+
+
+
+
+
 // ## Task-18
 
 // ```
@@ -447,12 +511,22 @@ rub(5);
 //  ibarət elementini qaytaran funksiya yazın.
 // ```
 
+// let words = ["apple", "banana", "cat", "dog", "elephant"];
+// let text = words.map(word => word.slice(0, 3));
+// console.log(text);
+
 // ## Task-19
 
 // ```
 // Adlar massivi verilib. A hərfi ilə başlayan orijinal massivdəki
 // elementlərdən ibarət yeni massiv yaradın.
 // ```
+
+// let users = ["Qafar", "Cavidan", "Amir", "Abdul", "ali"]
+// let search = users.filter(user =>  user.toLowerCase().startsWith("a") && user.toLowerCase().endsWith("i"))
+// let search = users.filter(user => user.toLowerCase().startsWith("a"))
+// console.log(search);
+
 
 // ## Task-20
 
@@ -462,6 +536,14 @@ rub(5);
 // qiymətlərin daxil olduğu massiv yaradın və onu konsola çıxarın. ƏDV 20% təşkil edir.
 // ```
 
+// let number = [100,200,300]
+// function addTax(cal) {
+//     return cal.map( price => price + price * 0.2)
+// }
+// console.log(addTax(number));
+
+
+
 // ## Task-21
 
 // ```
@@ -469,3 +551,19 @@ rub(5);
 // olması barədə məlumatı qaytaran countEvensAndOdds() funksiyasını yazın.
 // Numune: Funksiya «Massivdə 4 cüt və 2 tək ədəd var» formasında mesaj qaytarır.
 // ```
+// reduce ile etdim
+// let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,22,21,23,24,25,26,27,28,29,30,5]
+// function countEvensAndOdds(list){
+//     let result = list.reduce((acc,num)=>{
+//         if(num % 2 === 0){
+//             acc.cut++
+//         }
+//         else{
+//             acc.tek++
+//         }
+//         return acc
+//     },{cut : 0, tek : 0})
+//     return `${result.cut} cut ve ${result.tek} tek eded sayisi`;
+// }
+// console.log(countEvensAndOdds(numbers));
+
