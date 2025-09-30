@@ -203,3 +203,8 @@
 // Məsələn, `mostFrequent("1, 3, 2, 3, 4, 3, 5, 3")` çağırıldıqda `3` qaytarmalıdır.
 // ```
 
+// function mostFrequent(number) {
+//   let text = number.split(",").map(num => num.trim());
+//   return text.sort((a, b) => text.filter(t => t === b).length - text.filter(t => t === a).length)[0];
+// }
+// console.log(mostFrequent("1, 3, 2, 3, 4, 3, 5, 3,2,2,2,2"));
