@@ -34,9 +34,14 @@ const student = {
   scores: [90, 85, 78],
   fullName(){
     return `Adi ${this.name} ${this.age} yasi var`
+  },
+  scoresArr(){
+      return this.scores.reduce((a,b) => a + b, 0) / this.scores.length
   }
 };
 console.log(student.fullName())
+console.log(student.scoresArr());
+
 
 // 📌 Tapşırıq 4
 // Bu funksiya firstName və lastName qəbul etsin və onları birləşdirib tam ad kimi qaytarsın.
